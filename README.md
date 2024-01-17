@@ -1,134 +1,134 @@
-# 人人都能用英语
+#Everyone can use English
 
-## 目录
+## Table of contents
 
-- [简介](./book/README.md)
-- [第一章：起点](./book/chapter1.md)
-- [第二章：口语](./book/chapter2.md)
-- [第三章：语音](./book/chapter3.md)
-- [第四章：朗读](./book/chapter4.md)
-- [第五章：词典](./book/chapter5.md)
-- [第六章：语法](./book/chapter6.md)
-- [第七章：精读](./book/chapter7.md)
-- [第八章：叮嘱](./book/chapter8.md)
-- [后记](./book/end.md)
+- [Introduction](./book/README.md)
+- [Chapter 1: Starting Point](./book/chapter1.md)
+- [Chapter 2: Speaking](./book/chapter2.md)
+- [Chapter 3: Voice](./book/chapter3.md)
+- [Chapter 4: Reading](./book/chapter4.md)
+- [Chapter 5: Dictionary](./book/chapter5.md)
+- [Chapter 6: Grammar](./book/chapter6.md)
+- [Chapter 7: Intensive Reading](./book/chapter7.md)
+- [Chapter 8: Advice](./book/chapter8.md)
+- [Postscript](./book/end.md)
 
-## 应用
+## Application
 
 - [Enjoy App](./enjoy/README.md)
 
-## * 开发者
+## * Developer
 
-### 本地启动
+### Local startup
 
 ```bash
 yarn install
 yarn start:enjoy
 ```
 
-### 编译
+### Compile
 
 ```bash
 yarn make:enjoy
 ```
 
-## * 普通小白用户
+## * Ordinary novice users
 
-方法一：这是**最直接简单的方法**是去 [releases 页面](https://github.com/xiaolai/everyone-can-use-english/tags)下载相应的安装文件。
+Method 1: This is the **most direct and simple method** to go to the [releases page](https://github.com/xiaolai/everyone-can-use-english/tags) to download the corresponding installation file.
 
-方法二：如果想要随时**试用更新版本**的话，请按一下步骤操作。
+Method 2: If you want to **try the updated version** at any time, please follow the steps.
 
-### MacOS 用户
+### MacOS users
 
-1. 打开命令行工具 Terminal
-2. 安装 Homebrew（请参阅这篇文章：《[从 Terminal 开始…](https://github.com/xiaolai/apple-computer-literacy/blob/main/start-from-terminal.md)》）
-3. 安装 yarn：
+1. Open the command line tool Terminal
+2. Install Homebrew (please refer to this article: "[Start from Terminal...](https://github.com/xiaolai/apple-computer-literacy/blob/main/start-from-terminal.md)")
+3. Install yarn:
 
-   ```bash
-   brew install yarn
-   ```
-4. 克隆此仓库至本地，而后安装、启动：
+    ```bash
+    brew install yarn
+    ```
+4. Clone this repository locally, then install and start:
 
-   ```bash
-   cd ~
-   mkdir github
-   cd github
-   git clone https://github.com/xiaolai/everyone-can-use-english
-   cd everyone-can-use-english
-   yarn install
-   yarn start:enjoy
-   ```
+    ```bash
+    cd ~
+    mkdir github
+    cdgithub
+    git clone https://github.com/xiaolai/everyone-can-use-english
+    cd everyone-can-use-english
+    yarn install
+    yarn start:enjoy
+    ```
 
-### Windows 用户
+### Windows users
 
-系统要求：Windows 10 22H2 以上版本、 [Windows PowerShell 5.1](https://aka.ms/wmf5download) 以上版本、互联网网络连接正常。
+System requirements: Windows 10 22H2 or above, [Windows PowerShell 5.1](https://aka.ms/wmf5download) or above, and a normal Internet connection.
 
-1. 将鼠标移至任务栏的 “Windows 徽标” 上单击右键，选择 “PowerShell”
+1. Move the mouse to the "Windows logo" on the taskbar, right-click and select "PowerShell"
 
-   > tips 1 ：在最新的 Windows 11 上，你看不到 “PowerShell” 选项，只有 “终端”
-   >
-   > tips 2 ：不能用管理员权限运行 PowerShell ，否则会导致 Scoop 安装失败
-   >
-2. 在弹出的 PowerShell 窗口中依次执行运行以下命令，安装Scoop：
+    > tips 1: On the latest Windows 11, you can’t see the “PowerShell” option, only “Terminal”
+    >
+    > tips 2: Do not run PowerShell with administrator privileges, otherwise Scoop installation will fail.
+    >
+2. In the pop-up PowerShell window, execute the following commands in order to install Scoop:
 
-   ```powershell
-   # 设置 PowerShell 执行策略
-   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-   # 下载安装脚本
-   irm get.scoop.sh -outfile 'install.ps1'
-   # 执行安装, --ScoopDir 参数指定 Scoop 安装路径
-   .\install.ps1 -ScoopDir 'C:\Scoop'
-   ```
+    ```powershell
+    # Set PowerShell execution policy
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    # Download the installation script
+    irm get.scoop.sh -outfile 'install.ps1'
+    # Execute installation, the --ScoopDir parameter specifies the Scoop installation path
+    .\install.ps1 -ScoopDir 'C:\Scoop'
+    ```
 
-   如果出现下面的错误：
+    If the following error occurs:
 
-   > `<span style="color:red">`irm : 未能解析此远程名称: 'raw.githubusercontent.com'
-   >
+    > `<span style="color:red">`irm: Unable to resolve the remote name: 'raw.githubusercontent.com'
+    >
 
-   说明你的**网络连接**有问题，请自行研究解决：
-3. 安装 Nodejs 和 yarn 以及其他依赖环境 ：
+    It means there is a problem with your **network connection**. Please research and solve it yourself:
+3. Install Nodejs, yarn and other dependent environments:
 
-   ```powershell
-   scoop install nodejs
-   scoop install git
-   npm install yarn -D
-   ```
-4. 克隆此仓库至本地，而后安装 Enjoy APP：
+    ```powershell
+    scoop install nodejs
+    scoop install git
+    npm install yarn -D
+    ```
+4. Clone this repository locally and install Enjoy APP:
 
-   ```powershell
-   cd ~
-   mkdir github
-   cd github
-   git clone https://github.com/xiaolai/everyone-can-use-english
-   cd everyone-can-use-english
-   cd enjoy
-   yarn install
-   yarn start:enjoy
-   ```
+    ```powershell
+    cd ~
+    mkdir github
+    cdgithub
+    git clone https://github.com/xiaolai/everyone-can-use-english
+    cd everyone-can-use-english
+    cd enjoy
+    yarn install
+    yarn start:enjoy
+    ```
 
-   出现 `Completed in XXXXXXXXXX` 类似字样说明安装成功！
-5. 运行 Enjoy APP ，在终端执行下列命令：
+    Words like `Completed in XXXXXXXXXX` appear, indicating that the installation is successful!
+5. Run Enjoy APP and execute the following commands in the terminal:
 
-   ```powershell
-   yarn start:enjoy
-   ```
+    ```powershell
+    yarn start:enjoy
+    ```
 
-## 更新Enjoy
+##UpdateEnjoy
 
-更新并使用最新版本的Enjoy：
+Update and use the latest version of Enjoy:
 
-1. 将仓库最新内容拉取到本地，在命令行工具中执行：
+1. Pull the latest contents of the warehouse to the local computer and execute it in the command line tool:
 
-   ```bash
-   git pull
-   ```
-   结果显示为：
+    ```bash
+    git pull
+    ```
+    The result is shown as:
 
-   ```shell
-   Already up to date.
-   ```
-2. 运行Enjoy APP：
+    ```shell
+    Already up to date.
+    ```
+2. Run Enjoy APP:
 
-   ```shell
-   yarn start:enjoy
-   ```
+    ```shell
+    yarn start:enjoy
+    ```
